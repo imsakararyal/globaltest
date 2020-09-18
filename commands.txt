@@ -1,0 +1,26 @@
+yarn global add react-native-rename
+react-native-rename <newName>
+react-native-rename "Travel App" -b com.junedomingo.travelapp
+
+sudo yarn add -D "@bam.tech/react-native-make"
+
+
+react-native set-splash --platform android --path <path-to-image> --resize <[contain]|cover|center> --background ">background-color>"
+sudo react-native set-icon --platform android  --path Assets/splash.png  --background "yellow"
+
+
+
+sudo yarn add react-native-config
+
+android/app/build.gradle
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
+
+$ ENVFILE=.env.staging react-native run-ios           # bash
+$ SET ENVFILE=.env.staging && react-native run-ios    # windows
+$ env:ENVFILE=".env.staging"; react-native run-ios    # powershell
+cd android && ENVFILE=.env.staging ./gradlew assembleRelease
+For advance
+defaultConfig {
+    ...
+    resValue "string", "build_config_package", "YOUR_PACKAGE_NAME_IN_ANDROIDMANIFEST.XML"
+}
