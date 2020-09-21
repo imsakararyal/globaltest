@@ -1,0 +1,19 @@
+git+https://<token-name>:<token>@gitlab.com/Username/Repository#{branch|tag}
+
+Personal Access token
+17dRBZP-JXDzYm6sd8wN
+
+git+https://Personal Access token:17dRBZP-JXDzYm6sd8wN@gitlab.com
+
+
+
+"formbuilder": "git+https://sakararyal:17dRBZP-JXDzYm6sd8wN@gitlab.com/build-change/global/edatosrn"
+
+
+
+https://gitlab.com/build-change/global/edatosrn.git
+
+
+git+https://<token-name>:<token>@gitlab.com/Username/Repository
+
+git+https://testing:sLnstvi2ZmZjzxB-JBxz@gitlab.com/global/edatosrn.git
